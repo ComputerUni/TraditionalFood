@@ -15,3 +15,5 @@ CREATE TABLE orders (
     order_date DATETIME DEFAULT GETDATE(),
     FOREIGN KEY (user_id) REFERENCES users(user_id)
 );
+
+INSERT INTO users (id, name) VALUES (1, 'John Doe', '345@gmail.com');
